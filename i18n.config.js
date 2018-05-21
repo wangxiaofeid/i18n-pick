@@ -1,9 +1,10 @@
 
 const _config = {
-  "importStatement": "import { I18N } from '@common/I18N';",
+  "importStatement": "import { I18N } from 'tools';",
+  // "importStatement": "",
   "callStatement": "I18N.get",
   "targetDir": "i18n-messages",
-  "exclude": []
+  "exclude": ["mock/*.js"]
 }
 const path = require('path');
 module.exports = function () {
